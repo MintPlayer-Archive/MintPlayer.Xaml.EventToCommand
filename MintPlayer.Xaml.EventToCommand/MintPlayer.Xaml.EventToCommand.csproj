@@ -1,15 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Pieterjan De Clippel</Authors>
-    <Company>MintPlayer</Company>
-    <Description>This package contains a behavior that allows you to bind an event to a command in XAML</Description>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Authors>Pieterjan De Clippel</Authors>
+		<Company>MintPlayer</Company>
+		<Version>1.0.0</Version>
+		<Description>This package contains a behavior that allows you to bind an event to a command in XAML</Description>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/MintPlayer/MintPlayer.Xaml.EventToCommand</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/MintPlayer/MintPlayer.Xaml.EventToCommand</RepositoryUrl>
+		<RepositoryType>Git</RepositoryType>
+		<PackageTags>XAML, EventToCommand</PackageTags>
+		<PackageId>MintPlayer.Xaml.EventToCommand</PackageId>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
+	</ItemGroup>
 
 </Project>
