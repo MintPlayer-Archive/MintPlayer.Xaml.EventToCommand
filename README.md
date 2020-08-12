@@ -6,3 +6,20 @@
 
 This repository contains a behavior that allows you to bind an event to a command in XAML
 
+## Consuming the behavior
+
+    <ListView ItemsSource="{Binding People}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Behaviors>
+            <local:EventToCommandBehavior EventName="ItemSelected" Command="{Binding OutputAgeCommand}" Converter="{StaticResource SelectedItemConverter}" />
+        </ListView.Behaviors>
+    </ListView>
+    <Label Text="{Binding SelectedItemText}" />
+    
+## Source
+
+https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/reusable/event-to-command-behavior
