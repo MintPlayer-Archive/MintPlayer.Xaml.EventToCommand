@@ -3,6 +3,7 @@
 [![NuGet](https://img.shields.io/nuget/dt/MintPlayer.Xaml.EventToCommand.svg?style=flat)](https://www.nuget.org/packages/MintPlayer.Xaml.EventToCommand)
 [![Build Status](https://travis-ci.org/MintPlayer/MintPlayer.Xaml.EventToCommand.svg?branch=master)](https://travis-ci.org/MintPlayer/MintPlayer.Xaml.EventToCommand)
 ![.NET Core](https://github.com/MintPlayer/MintPlayer.Xaml.EventToCommand/workflows/.NET%20Core/badge.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This repository contains a behavior that allows you to bind an event to a command in XAML
 
