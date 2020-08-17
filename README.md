@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/MintPlayer/MintPlayer.Xaml.EventToCommand.svg?branch=master)](https://travis-ci.org/MintPlayer/MintPlayer.Xaml.EventToCommand)
 ![.NET Core](https://github.com/MintPlayer/MintPlayer.Xaml.EventToCommand/workflows/.NET%20Core/badge.svg)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2ae1c816b1c645988c18004ce70fc05c)](https://www.codacy.com/gh/MintPlayer/MintPlayer.Xaml.EventToCommand?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MintPlayer/MintPlayer.Xaml.EventToCommand&amp;utm_campaign=Badge_Grade)
 
 This repository contains a behavior that allows you to bind an event to a command in XAML
 
@@ -23,4 +24,4 @@ This repository contains a behavior that allows you to bind an event to a comman
     
 ## Source
 
-https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/reusable/event-to-command-behavior
+[Official explaination for the Event-To-Command behavior](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/behaviors/reusable/event-to-command-behavior)

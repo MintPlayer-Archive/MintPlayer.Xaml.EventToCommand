@@ -66,7 +66,7 @@ namespace MintPlayer.Xaml.EventToCommand
 			{
 				throw new ArgumentException(string.Format("EventToCommandBehavior: Can't register the '{0}' event.", EventName));
 			}
-			var methodInfo = typeof(EventToCommandBehavior).GetTypeInfo().GetDeclaredMethod("OnEvent");
+			var methodInfo = typeof(EventToCommandBehavior).GetTypeInfo().GetDeclaredMethod(nameof(EventToCommandBehavior.OnEvent));
 			eventHandler = methodInfo.CreateDelegate(eventInfo.EventHandlerType, this);
 			eventInfo.AddEventHandler(AssociatedObject, eventHandler);
 		}
