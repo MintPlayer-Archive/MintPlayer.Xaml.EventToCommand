@@ -35,3 +35,4 @@ jobs:
       run: dotnet nuget push *.nupkg --no-symbols --skip-duplicate
       env:
         NUGET_AUTH_TOKEN: ${{ github.token }}
+
