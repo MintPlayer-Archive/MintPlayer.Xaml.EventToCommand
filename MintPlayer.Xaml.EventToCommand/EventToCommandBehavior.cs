@@ -5,42 +5,42 @@ using Xamarin.Forms;
 
 namespace MintPlayer.Xaml.EventToCommand
 {
-    public class EventToCommandBehavior : BehaviorBase<View>
+	public class EventToCommandBehavior : BehaviorBase<View>
 	{
 		Delegate eventHandler;
 
-        #region Bindable Properties
-        public static readonly BindableProperty EventNameProperty = BindableProperty.Create("EventName", typeof(string), typeof(EventToCommandBehavior), null, propertyChanged: OnEventNameChanged);
+		#region Bindable Properties
+		public static readonly BindableProperty EventNameProperty = BindableProperty.Create("EventName", typeof(string), typeof(EventToCommandBehavior), null, propertyChanged: OnEventNameChanged);
 		public static readonly BindableProperty CommandProperty = BindableProperty.Create("Command", typeof(ICommand), typeof(EventToCommandBehavior), null);
 		public static readonly BindableProperty CommandParameterProperty = BindableProperty.Create("CommandParameter", typeof(object), typeof(EventToCommandBehavior), null);
 		public static readonly BindableProperty InputConverterProperty = BindableProperty.Create("Converter", typeof(IValueConverter), typeof(EventToCommandBehavior), null);
-        #endregion
+		#endregion
 
-        #region Properties
-        public string EventName
+		#region Properties
+		public string EventName
 		{
-			get { return (string)GetValue(EventNameProperty); }
-			set { SetValue(EventNameProperty, value); }
+			get => (string)GetValue(EventNameProperty);
+			set => SetValue(EventNameProperty, value);
 		}
 
 		public ICommand Command
 		{
-			get { return (ICommand)GetValue(CommandProperty); }
-			set { SetValue(CommandProperty, value); }
+			get => (ICommand)GetValue(CommandProperty);
+			set => SetValue(CommandProperty, value);
 		}
 
 		public object CommandParameter
 		{
-			get { return GetValue(CommandParameterProperty); }
-			set { SetValue(CommandParameterProperty, value); }
+			get => GetValue(CommandParameterProperty);
+			set => SetValue(CommandParameterProperty, value);
 		}
 
 		public IValueConverter Converter
 		{
-			get { return (IValueConverter)GetValue(InputConverterProperty); }
-			set { SetValue(InputConverterProperty, value); }
+			get => (IValueConverter)GetValue(InputConverterProperty);
+			set => SetValue(InputConverterProperty, value);
 		}
-        #endregion
+		#endregion
 
 		protected override void OnAttachedTo(View bindable)
 		{
